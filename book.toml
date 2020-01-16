@@ -1,0 +1,27 @@
+[book]
+authors = ["Laurent"]
+language = "en"
+multilingual = false
+src = "src"
+title = "rust-playground"
+
+# Table of content generation
+[preprocessor.toc]
+command = "mdbook-toc"
+
+# Mermaid support
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+renderer = ["html"]
+
+[output.html]
+additional-css = ["mermaid-assets/mermaid.css"]
+additional-js = ["mermaid-assets/mermaid.min.js", "mermaid-assets/mermaid-init.js"]
+
+# Math support
+mathjax-support = true
+
+# Editors parameters
+[output.html.playpen]
+editable = true
+line-numbers = true
